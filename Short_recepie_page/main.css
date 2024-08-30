@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+}
+@media only screen and (min-width:376px){
+    body{
+        background-color: pink;
+    }
+}
+body p{
+    font-size: 16px;
+}
+.box{
+    border-radius: 20px;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+@media (min-width: 376px) {
+    .box {
+        margin: 20px; /* Add desired margin */
+        padding: 20px; /* Add desired padding */
+    }
+}
+
+.img-container{
+    height: 172px;
+    width: 375px;
+    background: url(/assets/images/image-omelette.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.main{
+    max-width: 375px;
+    padding: 0 40px;
+    background-color: white;
+}
+.main .content{
+    height:auto;
+    padding: 10px 0;
+}
+.main .content h2{
+    color: brown;
+}
+.main .content ul{
+    list-style-position: inside;
+}
+.main .content ol{
+    list-style-position: inside;
+}
+.main .content li{
+    color: rgba(64, 64, 64, 0.926);
+    margin: 10px 0;
+}
+.main .content li::marker{
+    color: black;
+}
+#heading h1{
+    padding-bottom: 20px;
+}
+#heading p{
+    color: rgba(64, 64, 64, 0.926);
+}
+#preparation-time h2{ 
+    padding-bottom: 10px;
+}
+#ingredients h2{
+    padding-bottom: 10px;
+}
+#instructions h2{
+    padding-bottom: 10px;
+}
+
+#nutrition{
+    display: flex;
+    flex-direction: column;
+}
+#nutrition h2{
+    padding-bottom: 10px;
+}
+table{
+    width: 100%; 
+    border-collapse: collapse;
+}
+th, td{
+    height: 50px;
+    border-bottom: 1px solid rgb(194, 194, 194);
+}
+td{
+    color: rgba(64, 64, 64, 0.926);
+}
